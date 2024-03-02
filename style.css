@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    font-family: 'poppins';
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.navbar .container-fluid .navbar-brand {
+    background-color: #333A73;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+    width: 120px;
+    transition: 1s ease-in-out;
+}
+
+.navbar .container-fluid .navbar-brand:hover {
+    width: 300px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar .container-fluid .navbar-brand .span-1 {
+    color: #FBA834;
+}
+
+.navbar .container-fluid .navbar-brand .span-2 {
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    margin-top: 150px;
+    width: auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+#MiniLeftNav li {
+    text-align: center;
+    list-style: outside none none;
+    padding: 0;
+    width: 48px;
+}
+
+#MiniLeftNav li a {
+    display: block;
+    padding: 7px;
+    position: relative;
+}
+
+#MiniLeftNav li a svg {
+    color: black;
+    width: 25px;
+    padding-top: 10px;
+}
+
+#MiniLeftNav span {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 0;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.50s;
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.50s;
+    transition: 0.50s;
+}
+
+#MiniLeftNav a:hover span {
+    width: auto;
+    padding: 0 20px;
+    overflow: visible;
+}
+
+#MiniLeftNav a:hover {
+    text-decoration: none;
+}
+
+#MiniLeftNav a span {
+    border-radius: 0 5px 5px 0;
+    background-color: #FBA834;
+    color: white;
+}
+
+#home {
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+#home img {
+    width: 230px;
+    height: 400px;
+    border-radius: 1000px;
+}
+
+#home .text {
+    text-align: center;
+}
+
+#home .text .brand {
+    font-size: 40px;
+}
+
+#home .text p {
+    font-size: 15px;
+    color: grey;
+}
+
+#home .text .icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .text .icon svg {
+    color: black;
+}
+
+#home .text .btn {
+    background-color: #333A73;
+    margin-top: 20px;
+    color: white;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #333A73;
+}
+
+#about .col img {
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 20px 0px 0 white;
+}
+
+#about .col .title {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#about .col p {
+    color: white;
+    font-size: 13px;
+}
+
+#about .table td {
+    font-size: 12px;
+}
+
+#project {
+    width: 100%;
+    height: auto;
+}
+
+#project .title {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#project .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #333A73;
+}
+
+#contact .my-form {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+}
+
+#contact .my-form .btn {
+    background-color: #FBA834;
+    margin-top: 20px;
+    color: white;
+}
